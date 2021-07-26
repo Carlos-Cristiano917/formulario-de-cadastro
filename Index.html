@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<title>Formulário de cadástro pessoal</title>
+<meta charset="utf-8">
+<meta name="author" content="CarlosCristiano">
+</head>
+<body>
+<header>
+<h1>Cadastro Obrigatório</h1>
+<p>Preencha o formulário abaixo para se cadastrar.</p>
+</header>
+<main>
+<form>
+<label for="nome">Nome:</label>
+<input type="text" name="campoNome" placeholder="Informe seu nome." id="nome" required> <br>
+<label for="sobrenome">Sobre nome:</label>
+<input type="text" name="sobrenome" placeholder="Informe seu sobre nome." id="sobrenome" required> <br>
+<label for="cpf">CPF:</label>
+<input tipe="number" name="CPF" placeholder="Informe seu CPF..." id="cpf" required> <br>
+<label for="rg">RG:</label>
+<input type="number" name="rg" id="rg" required> <br>
+<label for="data">Data de nascimento:</label>
+<input type="date" name="data de nascimento" id="data" required> <br>
+<label for="telefone">Telefone fixo:</label>
+<input type="tel" name="telefone" id="telefone" required> <br>
+<label for="cel">Celular:</label>
+<input type="tel" name="celular" id="cel" required> <br>
+<label for="email">e-mail:</label>
+<input type="e-mail" name="email" placeholder="Digite um e-mail válido, esample@gmail.com" id="email" required> <br>
+<label for="senha">Senha:</label>
+<input type="password" name="senha" placeholder="Informe uma senha de no mínimo 8 caracteres." id="senha" required> <br>
+<fieldset>
+<legend>Endereço</legend>
+<label for="pais">País de origem:</label>
+<select id="pais">
+<option>Brasil</option value="Brasil">
+</select> <br>
+<label for="endereco">Endereço:</label>
+<input type="text" name="endereco" placeholder="Informe seu endereço: rua, número, complemento..." id="endereco" required> <br>
+<label for="cidade">Cidade:</label>
+<input type="text" name="cidade" id="cidade" required> <br>
+<label for="estado">Estado:</label>
+<select id="estado">
+<option>Minas Gerais</option value="minasgerais>
+</select> <br>
+<label for="cep"">CEP:</label>
+<input type="text" name="cep" placeholder="Informe aqui o seu CEP:" id="cep" required> <br>
+</fieldset> <br>
+
+<fieldset>
+<legend>Sexo</legend>
+            <input type="radio" name="campoSexo" value="M"> Masculino
+            <input type="radio" name="campoSexo" value="F"> Feminino
+</fieldset> <br>
+<label for="obs">Observação:</label>
+<textarea name="observacao" id="obs" placeholder="Deixe sua mensagem:" required> </textarea> <br>
+            <br>
+<input type="submit"           name="enviar" value="enviar">
+</form>
+</main>
+<footer>
+<p>Desenvolvido por Carlos Cristiano.</p>
+</footer>
+</body>
+</html>
